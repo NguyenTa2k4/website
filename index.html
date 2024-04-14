@@ -4,155 +4,182 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css\style.css">
-    <link rel="stylesheet" href="css\reponsive\dashboard-responsive.css">
-    <link rel="stylesheet" href="css\reponsive\buy-sevices-responsive.css">
     <style>
-    .text-decor-none {
-        text-decoration: none;
-    }
-   .table-container {
-    overflow-x: auto;
-    max-width: 100%;
-    }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
 
-    .table {
+        .maintag {
+            /* padding: 10px; */
+            border-bottom: 1px solid brown;
+        }
+        .content {
+            margin: 10px;
+        }
+        .content p {
+            background-color: rgb(225, 223, 223);
+            border-radius: 4px;
+            padding: 16px;
+            border: 2px solid rgba(160, 73, 73, 0.2);
+        }
+        .content img {
+            width: 100%;
+        }
+        .content .total_list {
+            display: flex;
+        }
+        .content .list2,
+        .content .list1 {
+            width: 50%;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 4px;
+        }
+     
+        .content .list1 {
+            background-color: rgb(16, 140, 16);
+            color: white
+        }
+        .content .list2 {
+            background-color: rgba(221, 6, 6, 0.837);
+            color: white
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        table {
         width: 100%;
         border-collapse: collapse;
-    }
-
-    .table th,
-    .table td {
-        padding: 16px;
-        border-bottom: 1px solid #ddd;
-    }
-
-    .table th {
-        background-color: #319795;
-        color: white;
-        font-weight: bold;
-    }
-
-
-
-    @media (max-width: 768px) {
-        .table th,
-        .table td {
+          }
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
             padding: 8px;
         }
-    }
-
+        th {
+            background-color: #f2f2f2;
+        }
+        .content .tabletag {
+            margin: 10px;
+        }
+        .footer {
+            /* width: 100%; */
+            background-color: rgb(122, 122, 122);
+            padding: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .footer a {
+            text-decoration: none;
+            color: white;
+        }
     </style>
-
 </head>
 <body>
-    <div id="main" class="fl-row">
+    <div id="main">
+        <div class="maintag"><h1>Thiết kế web - HNMU.edu.vn</h1></div>
+        <div class="content">
+            <p>
+                Plants vs. Zombies 2 (PVZ2) là một trò chơi điện tử thú vị và gây nghiện, được phát triển bởi PopCap Games. Đây là phần tiếp theo của tựa game gốc Plants vs. Zombies, một trong những trò chơi tower defense phổ biến nhất mọi thời đại.</p>
+            <img src="OIP.jpg" alt="">
+            <div class="total_list">
+                <div class="list1">
+                    <h2>Phe thực vật</h2>
+                    <ul>
+                        <li>Hoa hướng dương</li>
+                        <li>Cây đậu phộng</li>
+                        <li>Câu bắp cải</li>
+                        <li>Củ khoai tây</li>
+                    </ul>
+                </div>
+                <div class="list2">
+                    <h2>Phe Zombies</h2>
+                    <ol value>
+                        <li>Zombie thông thường</li>
+                        <li>Zombie cầm khiên</li>
+                        <li>Zombie chạy nhanh</li>
+                        <li>Zombie nhảy cao</li>
+                    </ol>
+                </div>
+            </div>
 
-        <section id="static-navbar" class="w20pc ">
-            <div class="info-web fl-row pd-1rem">
-                <h1  >VPN4G</h1>
-            </div>
-    
-            <div class="navba fz-20px mg-1rem">
-                <div class="container">
-                    <div class="home fl-row pd-1rem hover-background ">
-                        <img class="img-icon-nav" src="static\images\003-web-browser.png" alt="">
-                        <h5>Trang Chủ</h5>
-                    </div>
-                    <div class="doc fl-row pd-1rem hover-background">
-                        <img class="img-icon-nav" src="static\images\002-newspaper.png" alt="">
-                        <h5>Tài Liệu</h5>
-                    </div>
-    
-                    <div class="container-services">
-                        <h3 class="cl-gray pd-left-1rem pd-top-1rem">DỊCH VỤ</h3>
-                        <div class="my-services fl-row pd-1rem hover-background">
-                            <img class="img-icon-nav" src="static\images\005-portfolio.png" alt="">
-                            <h5>Gói Dịch Vụ Của Tôi</h5>
-                        </div>
-                        <div class="buy-service fl-row pd-1rem hover-background">
-                            <img class="img-icon-nav" src="static\images\004-ecommerce.png" alt="">
-                            <h5>Mua Gói Dịch Vụ</h5>
-                        </div>
-                    </div>
-    
-                    <div class="container-services">
-                        <h3 class="cl-gray pd-left-1rem pd-top-1rem">TÀI CHÍNH</h3>
-                        <div class="my-order fl-row pd-1rem hover-background">
-                            <img class="img-icon-nav" src="static\images\printer.png" alt="">
-                            <h5>Đơn Hàng Của Tôi</h5>
-                        </div>
-                        <div class="my-profit fl-row pd-1rem hover-background">
-                            <img class="img-icon-nav" src="static\images\banknote.png" alt="">
-                            <h5>Hoa Hồng Của Tôi</h5>
-                        </div>
-                    </div>
-    
-                    <div class="container-services">
-                        <h3 class="cl-gray pd-left-1rem pd-top-1rem ">NGƯỜI DÙNG</h3>
-                        <div class="setting fl-row pd-1rem hover-background">
-                            <img class="img-icon-nav" src="static\images\007-technical-support.png" alt="">
-                            <h5>Tài Khoản</h5>
-                        </div>
-                        <div class="contact fl-row pd-1rem hover-background">
-                            <img class="img-icon-nav" src="static\images\008-chat.png" alt="">
-                            <h5>Liên hệ</h5>
-                        </div>
-                    </div>
-    
-                    <div class="footer pd-1rem">
-                        <p>VPN4G-2024</p>
-                    </div>
-    
-                </div>
-            </div>
-        </section>
-    
-        <div class="info-top fl-row  border-bottom-1px fixed background-color-white w100pc index-999">
-            <p class="note-direct">Trang chủ</p>
-            <i class="bars fa-solid fa-bars" ></i>
-            <div class="container fl-row absolute ">
-                <div class="light-dark">
-                </div>
-                <div class="info-user fl-row absolute  center-child hover-opacity ">
-                    <i class=" icon-email fa-solid fa-envelope"></i>
-                    <p class="email">phungthanhdat001</p>
-                    <i class="icon-user fa-solid fa-user" style="display: none;"></i>
-                    <i class="fa-solid fa-angle-down"></i>
-                </div>
-                <div class="show-choose-user border-bottom-1px display-false">
-                    <div class="user fl-row pd-1rem fz-12px hover-background">
-                        <i class="fa-solid fa-user"></i>
-                        <h3>Tài khoản</h3>
-                    </div>
-                    <div class="log-out fl-row pd-1rem fz-12px hover-background">
-                        <i class="fa-solid fa-right-from-bracket"></i>
-                        <h3>Đăng xuất</h3>
-                    </div>
-                </div>
-                
+            <div class="tabletag">
+                <h2>Thông số</h2>
+                <table>
+                    <tr>
+                        <th>Loài</th>
+                        <th>Đặc điểm</th>
+                        <th>Sức mạnh</th>
+                        <th>Tốc độ</th>
+                    </tr>
+                    <tr>
+                        <td>Hoa hướng dương</td>
+                        <td>Chiều cao, màu sắc, hình dáng</td>
+                        <td>Mức độ tấn công</td>
+                        <td>Tốc độ di chuyển</td>
+                    </tr>
+                    <tr>
+                        <td>Cây đậu phộng</td>
+                        <td>Kích thước, số lượng trái, tốc độ sinh trưởng</td>
+                        <td>Khả năng phòng thủ</td>
+                        <td>Tốc độ sinh trưởng</td>
+                    </tr>
+                    <tr>
+                        <td>Câu bắp cải</td>
+                        <td>Loại cải, kích thước, trọng lượng</td>
+                        <td>Khả năng nổ</td>
+                        <td>Tốc độ phát triển</td>
+                    </tr>
+                    <tr>
+                        <td>Củ khoai tây</td>
+                        <td>Loại khoai tây, kích thước, màu sắc</td>
+                        <td>Khả năng phòng thủ</td>
+                        <td>Tốc độ sinh trưởng</td>
+                    </tr>
+                    <tr>
+                        <td>Zombie thông thường</td>
+                        <td>Ngoại hình, loại vũ khí</td>
+                        <td>Khả năng tấn công</td>
+                        <td>Tốc độ di chuyển</td>
+                    </tr>
+                    <tr>
+                        <td>Zombie cầm khiên</td>
+                        <td>Ngoại hình, loại vũ khí, khả năng phòng thủ</td>
+                        <td>Khả năng tấn công</td>
+                        <td>Tốc độ di chuyển</td>
+                    </tr>
+                    <tr>
+                        <td>Zombie chạy nhanh</td>
+                        <td>Ngoại hình, tốc độ, khả năng tấn công</td>
+                        <td>Khả năng tấn công</td>
+                        <td>Tốc độ di chuyển</td>
+                    </tr>
+                    <tr>
+                        <td>Zombie nhảy cao</td>
+                        <td>Ngoại hình, khả năng nhảy cao, vũ khí</td>
+                        <td>Khả năng tấn công</td>
+                        <td>Tốc độ di chuyển</td>
+                    </tr>
+                </table>
             </div>
         </div>
-        <!-- <section id="dynamic-content" class="w80pc relative pd-1rem"></section> -->
-        <div class="background-temp"></div>
-    
-        <div class="content relative fz-12px pd-20">
-            <div class="screen-black" style="display: none;"></div>
-            <div class="screen-show-detail w80pc fixed  pd-16 background-color-white">
-                <div class="title fl-row relative pd-16 border-bottom-1px">
-                    <h1 >Hướng Dẫn Cài Đặt Shadowrocket bằng IOS</h1>
-                    <svg class="close-button cs-pt hover-opacity absolute right0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
-                </div>
-            </div>
-            <div class="container pd-1rem fs-14px" >
-                <div class="info-doc fl-col ">
-                    
-                </div>
-            </div>
+        
+        <div class="footer">
+            <a href="http://hnmu.edu.vn" target="_blank">Bản Quyền</a>
         </div>
-    
     </div>
-    <script src="https://kit.fontawesome.com/0d2d64e695.js" crossorigin="anonymous"></script>
-    <script src="js/main.js"></script>
 </body>
 </html>
